@@ -1,0 +1,1 @@
+I remember doing this for mobile games, and rembered struggling to get nodes to work, after getting nodes to work we created this folder. You saiad we could implement anything into the index. I tried following the tutorials and still strugglesd to get nodes to work. So ihope this is good enough. Thanks!
