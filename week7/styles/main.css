@@ -1,0 +1,40 @@
+body {
+    background-color: rgb(70, 124, 168);
+  }
+  #images {
+  
+      width: 240px;
+      height: 240px;
+      padding: 10px;
+  }
+  
+  #images > div {
+  
+      top: 10px;
+      left: 10px;
+      right: 10px;
+      bottom: 10px;
+  }
+  
+  #text {
+  background-color: white;
+  margin-top: 600px;
+  }
+  
+  #square {
+     width: 50px;
+     height: 50px;
+     background: gold;
+     position: absolute;
+     left: 0;
+     top: 400;
+   }
+  
+   #square2 {
+      width: 25px;
+      height: 25px;
+      background: rgb(255, 255, 255);
+      position: absolute;
+      left: 1000;
+      top: 0;
+    }
