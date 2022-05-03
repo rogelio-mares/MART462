@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PACER RUNNING</title>
+<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+<link rel="stylesheet" href="./js/styles.js" type="text/css" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
+    .fa {
+    font-size:20px;
+    cursor: pointer;
+    user-select: none;
+    }
+
+    .fa:hover {
+    color: darkblue;
+    }
+    .container {
+      border: 2px solid #ccc;
+      background-color: #eee;
+      border-radius: 5px;
+      padding: 16px;
+      margin: 75px ;
+    }
+    
+    .container::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    
+    .container img {
+      float: left;
+      margin-right: 20px;
+      border-radius: 50%;
+    }
+    
+    .container span {
+      font-size: 20px;
+      margin-right: 15px;
+    }
+    
+    @media (max-width: 500px) {
+      .container {
+          text-align: center;
+      }
+      .container img {
+          margin: auto;
+          float: none;
+          display: block;
+      }
+    }
+    </style>
+</head>
+
+<body>
+<div class="topnav">
+    <a class="active" href="Activity.html">Activity Feed</a>
+    <a href="index.html">Home</a>
+    <a href="Profile.html">My Profile</a>
+    <a></a>
+    <a></a>
+    <a></a>
+    <a></a>
+    <a></a>
+    <a></a>
+    <a></a>
+    <a></a>
+    <img src="images/logo.png" alt="me" title="Pacer" width="250" height="90" />
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h2 >ACTIVITY FEED</h2>
+ <div class="container">
+   <img src="images/profile.jpg" alt="Avatar" style="width:90px">
+   <p><span>Rogelio Mares</span> May 3rd 2022</p>
+   <p>2 mi |    7:55/mi|    15m 50s</p>
+   <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+ </div>
+ 
+ <div class="container">
+   <img src="images/profile.jpg" alt="Avatar" style="width:90px">
+   <p><span>Rogelio Mares</span> April 30th 2022</p>
+   <p>3.49 mi |    6:33/mi|    22m 53s</p>
+   <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+ </div>
+ <div class="container">
+   <img src="images/profile.jpg" alt="Avatar" style="width:90px">
+   <p><span>Rogelio Mares</span> April 30th 2022</p>
+   <p>3.49 mi |    6:33/mi|    22m 53s</p>
+   <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+ </div>
+ <div class="container">
+   <img src="images/profile.jpg" alt="Avatar" style="width:90px">
+   <p><span>Rogelio Mares</span> April 29th 2022</p>
+   <p>2.50 mi |    7:04/mi|    17m 41s</p>
+   <i onclick="myFunction(this)" class="fa fa-thumbs-up"></i>
+ </div>
+ 
+ <script>
+    function myFunction(x) {
+      x.classList.toggle("fa-thumbs-down");
+    }
+    </script>
+</body>
+</html>
