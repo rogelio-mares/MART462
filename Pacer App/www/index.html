@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PACER RUNNING</title>
+<link rel="stylesheet" href="./css/styles.css" type="text/css" />
+<link rel="stylesheet" href="./js/styles.js" type="text/css" />
+</head>
+<body>   
+
+<div class="topnav">
+  <a class="active" href="index.html">Home</a>
+  <a href="Profile.html">My Profile</a>
+  <a href="SignUp.html">Sign Up</a>
+  <a href="Subscribe.html">Pacer Plus + </a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <img src="images/logo.png" alt="me" title="Pacer" width="250" height="90" />
+  <div class="login-container" href="login.html">
+      <input type="text" placeholder="Username" name="username">
+      <input type="text" placeholder="Password" name="psw">
+      <button onclick="myFunction()">Login</button>
+    </form>
+  </div>
+  <div id="snackbar">Please Sign Up</div>
+  <script>
+   function myFunction() {
+     var x = document.getElementById("snackbar");
+     x.className = "show";
+     setTimeout(function(){ x.className = x.className.replace("show", ""); }, 3000);
+   }
+   </script>
+</div>
+
+
+<br>
+<br>
+<br>
+<br>
+<div class="container">
+ <section>
+   <img class="mySlides" src="images/pic1.jpeg"
+   style="width:100%"  height="650">
+   <img class="mySlides" src="images/pic2.jpeg"
+   style="width:100%"  height="650">
+   <img class="mySlides" src="images/pic3.jpeg"
+   style="width:100%"  height="650">
+ </section>
+ <div class="content">
+   <h1>Measure Your Performance</h1>
+   <p>Record an activity and it goes to your feed, where your friends and followers can share their own races and workouts.</p>
+ </div>
+</div>
+<br>
+
+<h3>Pacer</h3>
+
+<button class="accordion"  style="color: #0f66c9;">What is Pacer?</button>
+<div class="panel">
+  <p style="font-size: 15pt"  style="color: rgb(138, 138, 138);">Pacer is a running-tracking and social media app designed for
+   runners: Connecting, tracking, and competing. Users can
+   track their fitness via GPS within the app, or log their fitness
+   manually, among other features. Pacer allows you to set
+   workout goals and weekly commitments. That can include
+   targets for the amount of time you spend training, the
+   distance you run, or the number of calories you want to burn.
+   What distinguishes Pacer from other fitness apps is its elegant
+   user interface and “social fitness” platform. In addition to
+   providing useful statistics and visualizations of exercise data.
+   Pacer allows users to socialize, motivate, and compete via
+   online and mobile apps. Individuals can use these features to
+   improve their performance and gain new insights into their
+   workout routines. One important feature to note is that
+   although it runs in the background of your phone, the app has
+   been optimised so that it doesn’t drain your battery life like a
+   lot of similar apps. In addition to the mobile app, Pacer
+   provides an API that allows 3rd party apps to integrate with
+   their services. These services allow users to share their data on
+   personal sites, provide enhanced analytical tools, and many
+   other features.</p>
+</div>
+
+<button class="accordion"  style="color: #0f66c9;">Who Is the Audience?</button>
+<div class="panel">
+  <p style="font-size: 15pt"  style="color: rgb(138, 138, 138);">Our app targets anybody that likes to run, competitively or
+   casually, or people trying to reach a fitness goal. We want to be
+   that source that people can look at in awe of them achieving
+   their goals. Pacer is aimed to reach everyone that is able to
+   create a goal, strive to be better, or watch your own progress.
+   Our app will be able to be used globally, thus making it
+   accessible to everyone with a phone. Pacer is for all type of
+   runners new or old. Whether you are new to running, want to
+   get a little fitter or if you have a more specific goal in mind,
+   like competing in a local 5k race or running a half marathon.
+   We can guarantee that our app will satisfy your needs and have
+   beginner runners looking for motivation to start.</p>
+</div>
+
+<button class="accordion" style="color: #0f66c9;">Why Now?</button>
+<div class="panel" >
+  <p style="font-size: 15pt" style="background-color:rgb(221, 221, 221);" style="color: rgb(138, 138, 138);">Pacer is needed right this second because whether you're
+   working up to your first race or running your second
+   marathon, our app provides an essential tool for maximizing
+   your workout. From tracking pace to providing motivtavtion
+   among other runners, pacer is essentially like having a
+   personal trainer in your pocket. Most fitness apps provided
+   today are either for beginners, or some are for weight loss, but
+   our app is intended for anyone who took fitness seriously.
+   Pacer will motivate many runners to progress towards their
+   goals and push themselves to become the best they can be.
+   But it’s not only about achieving and progressing, its
+   dedicated to inspire each other and the members of our
+   community. That balanced approach has helped us create our
+   app.When you’re ready for a challenge and a team that will
+   support you along the way, join us.</p>
+</div>
+
+ <script>
+ // Automatic Slideshow - change image every 3 seconds
+ var myIndex = 0;
+ carousel();
+ 
+ function carousel() {
+   var i;
+   var x = document.getElementsByClassName("mySlides");
+   for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+   }
+   myIndex++;
+   if (myIndex > x.length) {myIndex = 1}
+   x[myIndex-1].style.display = "block";
+   setTimeout(carousel, 3000);
+ }
+ </script> 
+ <script>
+    // pop up
+   var acc = document.getElementsByClassName("accordion");
+   var i;
+   
+   for (i = 0; i < acc.length; i++) {
+     acc[i].addEventListener("click", function() {
+       this.classList.toggle("active");
+       var panel = this.nextElementSibling;
+       if (panel.style.display === "block") {
+         panel.style.display = "none";
+       } else {
+         panel.style.display = "block";
+       }
+     });
+   }
+   </script>
+ <p> </p>
+</body>
+</html>
