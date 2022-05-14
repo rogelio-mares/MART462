@@ -1,0 +1,1 @@
+I've been trying to download this app all week and been watching many tutorials but cant get it to work. I kept putting build progam in the terminal but wasn't working.
